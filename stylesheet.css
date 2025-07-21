@@ -5,10 +5,6 @@
 
 }
 
-html, body {
-  width: 100%;
-}
-
 
 /*font*/
 @font-face {
@@ -1042,37 +1038,18 @@ box-sizing: border-box;
 
 /* ---------- HAMBURGER MENU ---------- */
 
-.nav-toggle {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  padding: 10px;
-  margin-left: auto;
-}
-
-.nav-toggle span {
-  height: 3px;
-  width: 25px;
-  background-color: #222;
-  margin: 4px 0;
-  transition: 0.4s;
-}
 
 /* Hide menu by default on small screens */
 @media (max-width: 768px) {
   .navbar {
-    display: none;
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     background-color: #fff;
     padding: 10px;
     width: 100%;
   }
 
   .navbar.active {
-    display: flex;
-  }
-
-  .nav-toggle {
     display: flex;
   }
 
@@ -1117,25 +1094,7 @@ s
   color: #999;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .footer-columns {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
 
-  .footer-legal {
-    justify-content: center;
-    text-align: center;
-  }
-
-  .footer-signup input {
-    width: 90%;
-    max-width: 400px;
-  }
-
-}
 
   .footer-signup h2 {
   font-size: 24px;
@@ -1311,83 +1270,12 @@ padding-left: 50px;
 
 /* ---------- MEDIA QUERIES ---------- */
 
-@media (max-width: 1024px) {
-  .footer-columns {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .dropdown-menu {
-    position: static;
-    width: 100%;
-    max-width: none;
-    height: auto;
-    box-shadow: none;
-    margin-top: 10px;
-  }
-
-  .dropdown-section {
-    width: 100%;
-  }
-
-  .footer-signup h2 {
-    font-size: 1.2rem;
-    text-align: center;
-  }
-}
-
-@media (max-width: 768px) {
-  .footer-column {
-    text-align: center;
-    flex: 1 1 100%;
-  }
-
-  .footer-legal {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
-  }
-
-  #scrollToTopBtn {
-    width: 42px;
-    height: 42px;
-    font-size: 18px;
-    bottom: 20px;
-    right: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .footer-signup h2 {
-    font-size: 1rem;
-  }
-
-  .floating-label-group input {
-    width: 100%;
-  }
-
-  #scrollToTopBtn {
-    width: 36px;
-    height: 36px;
-    font-size: 16px;
-    bottom: 15px;
-    right: 15px;
-  }
-}
 
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
     gap: 10px;
     padding: 10px;
-  }
-
-  .div1,
-  .div3 {
-    flex-direction: column;
-    gap: 10px;
-    padding-left: 20px;
   }
 
   .logo {
@@ -1510,7 +1398,7 @@ padding-left: 50px;
     margin-top: 20px;
   }
 }
-/* Mobile Style - One card at a time like the attached screenshot */
+/* review images*/
 @media (max-width: 768px) {
   .reviews {
     display: flex;
@@ -1533,3 +1421,83 @@ padding-left: 50px;
     scrollbar-width: none;
   }
 }
+/*divs */
+/* Hide .div1 on mobile and show .div1-mobile */
+@media (max-width: 768px) {
+  .div1 {
+    display: none;
+  }
+
+  .div1-mobile {
+    display: block;
+    text-align: center;
+    background-color: rgb(241, 241, 241);
+    font-family: "Sharp Sans Semibold", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+    padding: 8px 16px;
+  }
+}
+
+/* Hide .div1-mobile on desktop */
+@media (min-width: 768px) {
+  .div1-mobile {
+    display: none;
+  }
+}
+/*div 3*/
+@media (max-width: 768px) {
+  .div3 {
+    display: none;
+  }
+
+  .div3-mobile {
+    display: block;
+    text-align: center;
+    background-color: rgb(241, 241, 241);
+    font-family: "Sharp Sans Semibold", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+    padding: 8px 16px;
+  }
+}
+
+/* Hide .div1-mobile on desktop */
+@media (min-width: 769px) {
+  .div3-mobile {
+    display: none;
+  }
+}
+
+/*header query*/
+@media (max-width: 768px){
+  header a{
+    font-size: 12px;
+    padding-left: 20px;
+  }
+}
+
+/*main images query*/
+/* Show home image only on desktop */
+@media (min-width: 769px) {
+  .home-img {
+    display: inline-block;
+  }
+  .hide-img {
+    display: none;
+  }
+}
+
+/* Show hide image only on mobile */
+@media (max-width: 768px) {
+  .home-img {
+    display: none;
+  }
+  .hide-img {
+    display: inline-block;
+  }
+}
+
+
