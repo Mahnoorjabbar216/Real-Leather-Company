@@ -1415,10 +1415,6 @@ figcaption{
   .mob-logo-scroll::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera */
   }      
-
-  .mobile-only {
-    display: none;
-  }
 }
 
 /*divs */
