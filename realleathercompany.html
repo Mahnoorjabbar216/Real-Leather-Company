@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <title>The Real Leather Co. | Luxury Leather</title>
 </head>
 <body>
@@ -13,7 +14,9 @@
     <header>
       <a href="" target="_blank">20% Off Everything Summer Essential Sale | Use Code SUMMER20 at Checkout | Ends Soon</a>
     </header>
-    <nav>
+
+    <!--Desktop Navbar-->
+    <nav class="navigation">
       <ul class="navbar">
         <li>
           <a href="#">
@@ -157,16 +160,129 @@
 </ul>
 </nav>
 
+<!-- Mobile Navbar -->
+  <div class="mobile-header">
+    <a href="#"><img src="reallogo.jpeg" class="mobile-logo" alt="Logo" /></a>
+    <div class="right-icons">
+      <a href="#"><img src="bag.jpeg" class="bag-icon" alt="Bag" /></a>
+      <button class="hamburger" id="hamburgerBtn">&#9776;</button>
+    </div>
+    <!-- Slide-out Mobile Menu -->
+    <div class="mobile-menu-overlay">
+      <ul class="mobile-menu">
+        <li><a href="#">Best Sellers</a></li>
+        <li class="has-dropdown">
+        <span class="dropdown-toggle">Work Bags <i class="mob1-arrow down"></i> </span>
+          <div class="dropdown-content">
+            <div class="dropdown-image">
+              <a href=""><img src="navbar3.jpeg" alt="Leather Briefcases" class="zoom"/></a>
+              <figcaption>Leather Briefcases</figcaption>
+            </div>
+            <div class="dropdown-columns">
+              <div>
+                <strong>Briefcases</strong>
+                <a href="#">Leather Briefcases</a>
+                <a href="#">Leather Laptop Bags</a>
+                <a href="#">Leather Work Bags</a>
+                <a href="#">Leather Attache Cases</a>
+              </div>
+              <div>
+                <strong>Messenger Bags</strong>
+                <a href="#">Leather Messenger Bags</a>
+                <a href="#">Leather Satchel Bags</a>
+              </div>
+              <div>
+                <strong>Professionals</strong>
+                <a href="#">Pilot Bags</a>
+                <a href="#">Doctor Bags</a>
+                <a href="#">Teacher Bags</a>
+                <a href="#">Lawyer Bags</a>
+                <a href="#">Photographer Bags</a>
+              </div>
+            </div>
+      </div>
+    </li>
+
+    <li class="has-dropdown">
+      <span class="dropdown-toggle">Travel Bags <i class="mob2-arrow down"></i></span>
+      <div class="dropdown-content">
+        <div class="dropdown-image">
+          <a><img src="navbar2.jpeg" alt="Leather Backpacks" class="zoom"/></a>
+          <figcaption>Leather Backpacks</figcaption>
+        </div>
+        <div class="dropdown-columns">
+          <div>
+            <strong>Backpacks</strong>
+            <a href="#">Leather Backpacks</a>
+            <a href="#">School Backpacks</a>
+            <a href="#">College Backpacks</a>
+          </div>
+          <div>
+            <strong>Duffles</strong>
+            <a href="#">Leather Duffle Bags</a>
+            <a href="#">Leather Travel Bags</a>
+            <a href="#">Leather Luggage</a>
+          </div>
+          <div>
+            <strong>Day Bags</strong>
+            <a href="#">Leather Crossbody Bags</a>
+            <a href="#">Leather Sling Bags</a>
+            <a href="#">Leather Fanny Packs</a>
+            <a href="#">Leather Belt Bags</a>
+            <a href="#">Leather Toiletry Bags</a>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="has-dropdown">
+      <span class="dropdown-toggle">Accessories <i class="mob-arrow down"></i></span>
+      <div class="dropdown-content">
+        <div class="dropdown-image">
+          <a><img src="navbar1.jpeg" alt="Leather Wallets" class="zoom"/></a>
+          <figcaption>Leather Wallets</figcaption>
+        </div>
+        <div class="dropdown-columns">
+          <div>
+            <strong>Accessories</strong>
+            <a href="#">All Leather Accessories</a>
+            <a href="#">All Leather Goods</a>
+            <a href="#">Leather Care Items</a>
+          </div>
+          <div>
+            <strong>Wallets & Journals</strong>
+            <a href="#">Leather Wallets</a>
+            <a href="#">Leather Card Holders</a>
+            <a href="#">Leather Journals</a>
+          </div>
+          <div>
+            <strong>Gifts</strong>
+            <a href="#">Gifts for Him</a>
+            <a href="#">Gifts for Her</a>
+            <a href="#">Gifts Under $100</a>
+            <a href="#">Gifts $100-$200</a>
+            <a href="#">Gifts $200+</a>
+            <a href="#">Gift Cards</a>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li><a href="#">Our Story</a></li>
+  </ul>
+</div>
+</div>
+
     <!-- div1 -->
     <div class="div1">
-    <p>50,000+ Heirloom Bags Shipped</p>
-    <p>1 Year Warranty & 30 Day Returns</p>
-    <p>Rated 4.8/5 from 1300+ Reviews</p>
+      <p>50,000+ Heirloom Bags Shipped</p>
+      <p>1 Year Warranty & 30 Day Returns</p>
+      <p>Rated 4.8/5 from 1300+ Reviews</p>
     </div>
     <p class="div1-mobile">50,000+ Heirloom Bags Shipped | Rated 4.8/5</p>
 
     <a class = "home-img" href=""><img src="img1.jpeg"></a>
-    <a class = "hide-img" href=""><img style="width: 475px;" src="hideimage.png"></a>
+    <a class = "hide-img" href=""><img style="width: 100%;" src="hideimage.png"></a>
 
     <!-- logos section -->
     <div class="seen">
@@ -179,11 +295,21 @@
         <img src="logo3.jpeg" >
         <img src="https://cdn.shopify.com/s/files/1/0101/4644/7423/files/Mask_group_2_1.png?v=1742645901">
     </div>
+
+    <!--mob logos section-->
+    <div class="mob-seen">
+        <p>As seen in</p>
+    </div>
+    <div class="mob-logo">
+        <img  style="width: 50px;" src="https://cdn.shopify.com/s/files/1/0101/4644/7423/files/GQ-Logo_1.png?v=1742488195">
+        <img src="logo5.png">
+        <img style="width: 100px;" src="https://cdn.shopify.com/s/files/1/0101/4644/7423/files/Travel___Leisure_Co._logo.png?v=1742645901">
+        <img style="width: 50px;" src="logo3.jpeg" >
+    </div>
     
 
     <!-- Backpacks -->
-<section class="backpacktypes">
-    
+<section class="backpacktypes">   
         <div class="collections">
             <div class="c1">
                 <a href="">
@@ -231,7 +357,6 @@
     <a href="#" class="btn">VIEW ALL</a>
   </div>
 
-
   <!-- Logo-item -->
 <section class="logos">
   <div class="logo-item">
@@ -240,14 +365,32 @@
   </div>
   <div class="logo-item">
     <p>“Bags that age like a fine wine - gaining more character over time.”</p>
-    <img src="logo5.png" alt="Esquire Logo">
+    <img src="logo5.png" alt="GQ Logo">
   </div>
 </section>
 
+<!--mob logo item-->
+<section class="mob-logos">
+  <div class="mob-logo-scroll">
+    <div class="mob-logo-item">
+      <p>“Not just a bag—an heirloom<br> investment in something lasting,<br> personal, and timeless.”</p>
+      <img src="https://cdn.shopify.com/s/files/1/0101/4644/7423/files/GQ-Logo_1.png?v=1742488195" alt="GQ Logo">
+    </div>
+    <div class="mob-logo-item">
+      <p>“Bags that age like a fine wine - <br>gaining more character over time.”</p>
+      <img src="logo5.png" alt="Esquire Logo">
+    </div>
+  </div>
+
+  <div class="mob-dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+  </div>
+</section>
 
     <!--Images-->
     <div class="images">
-  
+
         <div class="hover-box">
             <a href="#">
             <img  src="bag1.jpeg" class="img-default">
@@ -361,13 +504,28 @@
       </div>
     </div>
 
-
       <!-- Reviews -->
-        <div class="reviews">
+      <div class="desktop-reviews">
         <img src="r3.jpeg" >
         <img src="r1.jpeg" >
         <img  src="r2.jpeg" >
-    </div>  
+    </div> 
+    
+<!-- Reviews for Mobile -->
+    <div class="reviews-wrapper mobile-only">
+      <div class="reviews">
+        <img src="r3.jpeg">
+        <img src="r1.jpeg">
+        <img src="r2.jpeg">
+      </div>
+
+  <!-- Dots below carousel -->
+      <div class="mob-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
 
     <div class="view-all">
       <a href="#" class="btn">READ ALL OUR REVIEWS</a>
@@ -377,7 +535,7 @@
 <section class="feature-section">
   <div class="feature-wrapper">
     <div class="feature-text">
-        <div class="text">
+      <div class="text">
       <h2>50,000+ Heirloom Bags Shipped</h2>
       <p>
         Whether it’s walking into a new job, the daily commute or a weekend getaway,
@@ -399,11 +557,9 @@
 
 <section class="feature-section">
   <div class="feature-wrapper">
-    <!-- Move image first -->
     <div class="feature-image">
       <img src="https://cdn.shopify.com/s/files/1/0101/4644/7423/files/Frame_2_14_1.jpg?v=1742573215" alt="Heirloom Leather Bag" />
     </div>
-    <!-- Then text block -->
     <div class="feature-text">
       <div class="text">
         <h2>Crafted for Those <br> Who Expect More</h2>
@@ -411,10 +567,54 @@
           From a quiet attic workshop in rural England to 50,000 professionals worldwide, our story is rooted in legacy, craftsmanship, and purpose.
         </p>
         <p>
-          Discover how a grandfather’s lesson led to something truly lasting
+          Discover how a grandfather’s lesson led to something truly lasting.
         </p>
         <a href="/collections/best-sellers-1" class="feature-btn">READ OUR STORY</a>
       </div>
+    </div>
+  </div>
+</section>
+
+<!--mobile feature section-->
+<section class="mob-feature-section">
+  <div class="mob-feature-wrapper">
+    <div class="mob-feature-image">
+      <img src="https://cdn.shopify.com/s/files/1/0101/4644/7423/files/Frame_2_15_1.jpg?v=1742637515" alt="Heirloom Leather Bag" />
+    </div>
+    <div class="mob-feature-text">
+      <div class="mob-text">
+      <h2>50,000+ Heirloom Bags Shipped</h2>
+      <p>
+        Whether it’s walking into a new job, the daily commute or a weekend getaway,
+        over 50,000 lawyers, bankers, and executives trust our leather bags to help
+        them carry with confidence.
+      </p>
+      <p>
+        Rated 4.8/5 stars from over a thousand verified reviews, our timeless designs and
+        heirloom quality craftsmanship are built to impress – wherever life takes you.
+      </p>
+      <a href="/collections/best-sellers-1" class="mob-feature-btn">SHOP BEST SELLERS</a>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section class="mob-feature-section">
+  <div class="mob-feature-wrapper">
+    <div class="mob-feature-image">
+      <img src="https://cdn.shopify.com/s/files/1/0101/4644/7423/files/Frame_2_14_1.jpg?v=1742573215" alt="Heirloom Leather Bag" />
+    </div>
+    <div class="mob-feature-text">
+      <div class="mob-text">
+      <h2>Crafted for Those <br> Who Expect More</h2>
+      <p>
+        From a quiet attic workshop in rural England to 50,000 professionals worldwide, our story is rooted in legacy, craftsmanship, and purpose.
+      </p>
+      <p>
+        Discover how a grandfather’s lesson led to something truly lasting
+      </p>
+      <a href="/collections/best-sellers-1" class="mob-feature-btn">SHOP BEST SELLERS</a>
+    </div>
     </div>
   </div>
 </section>
@@ -626,7 +826,7 @@
       <a href="#" class="toggle-dropdown">Acessories<i class="arrow1"></i></a>
       <div class="dropdown-menu">
         <div class="img-container">
-          <img src="navbar2.jpeg" class="zoom" alt="Leather wallet">
+          <img src="navbar1.jpeg" class="zoom" alt="Leather wallet">
         </div>
           <p class="menu-img-caption">Leather Wallets</p>
           <div class="label1">
@@ -703,6 +903,8 @@
 <button id="scrollToTopBtn" title="Go to top">↑</button>
 
 <script src="scrollupbutton.js"></script>
+<script src="menu.js"></script>
+<script src="slider.js"></script>
 
 </body>
 </html>
