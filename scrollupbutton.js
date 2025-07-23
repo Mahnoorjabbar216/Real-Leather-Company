@@ -1,3 +1,4 @@
+//scroll button
 document.addEventListener("DOMContentLoaded", function () {
   const scrollBtn = document.getElementById("scrollToTopBtn");
 
